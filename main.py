@@ -28,7 +28,6 @@ for i, contact1 in enumerate(contacts_list[1:]):
     dict_sravn = {uniq_key: contact1[0:]}
     for contact2 in contacts_list[i + 2:]:
         if uniq_key == f"{contact2[0]} {contact2[1]}":
-            print(dict_sravn)
             for num, elem in enumerate(dict_sravn[uniq_key]):
                 if elem == "":
                     dict_sravn[uniq_key][num] = contact2[num]
